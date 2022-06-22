@@ -1,0 +1,20 @@
+#top-header{
+    display: grid;
+   
+
+    background-color: lightgray;
+    height: fit-content;
+ 
+    >p {
+
+        text-align: center;
+        background-color: pink;
+        
+        height: 20px;
+        width: 20px;
+        border-radius: 100px;
+        padding: 2px;
+    }
+
+}
+
