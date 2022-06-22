@@ -1,4 +1,6 @@
-@use "mobile-header";
+@use "header.scss/mobile-header";
+@use "index.scss/index_main";
+
 
 *{
     margin:0;
@@ -7,6 +9,8 @@
 
 body{
     display: grid;
+    grid-template-rows: 100px 1fr;
+  
     min-height: 100vh;
     width: 100%;
 }
