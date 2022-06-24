@@ -2,14 +2,20 @@
 @use "../header.scss/mobile-header";
 @use "../footer.scss/footer";
 
+#index-body{
+    display: grid;
+    grid-template-rows: 100px 1fr;
+
+    min-height: 100vh;
+    width: 100%;
+}
+
 #cauldron {
-  
+  display: grid;
   place-items: center;
-  height: 40%;
+  height: 90%;
 
-// trying to fix grid issue ^removed grid, and changed height from 90% to accomodate padding
 
-    padding-top: 325px;
   
   .menu_radio_button {
     display: none;
@@ -43,8 +49,10 @@
   #menu_open:checked ~ label>#indexburger{
     display: none;
   }
+ 
+
   
-  
+
   label {
     display: grid;
     place-items: center;
