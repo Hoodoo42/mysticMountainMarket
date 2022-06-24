@@ -1,0 +1,55 @@
+@use "../general.scss/general";
+@use "../header.scss/mobile-header";
+@use "../footer.scss/footer";
+
+#cauldron {
+  
+  place-items: center;
+  height: 40%;
+
+// trying to fix grid issue ^removed grid, and changed height from 90% to accomodate padding
+
+    padding-top: 325px;
+  
+  .menu_radio_button {
+    display: none;
+  }
+  #mobile_menu {
+    position: absolute;
+    top: 170px;
+    left: 0px;
+    z-index: 10;
+
+    display: none;
+    place-items: center;
+
+    width: 100%;
+    height: 100%;
+    color: black;
+  }
+  #menu_open:checked ~ #mobile_menu {
+    display: grid;
+    height: 20%;
+  }
+
+  #menu_open_img {
+    display: none;
+  }
+
+  #menu_open:checked ~label>#menu_open_img{
+    display: grid;
+  }
+
+  #menu_open:checked ~ label>#indexburger{
+    display: none;
+  }
+  
+  
+  label {
+    display: grid;
+    place-items: center;
+    > #indexburger {
+      width: 15%;
+    }
+  }
+}

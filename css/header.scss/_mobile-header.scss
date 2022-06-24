@@ -1,7 +1,7 @@
-// VARIABLES
-$main-color: pink;
+@use "../general.scss/general" as g;
 
-// MAIN STYLING
+
+
 
 #top-header {
   display: grid;
@@ -16,7 +16,7 @@ $main-color: pink;
 
     > p {
       text-align: center;
-      background-color: $main-color;
+      background-color: g.$main-color;
 
       height: 20px;
       width: 20px;
@@ -25,8 +25,12 @@ $main-color: pink;
     }
   }
 
-  > h1 {
+  > img {
+    width: 50%;
     text-align: center;
+    justify-self: center;
+
+    padding: 10px;
   }
 }
 

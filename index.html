@@ -21,9 +21,9 @@
     <meta name="twitter:description" content="" />
     <meta name="twitter:image" content="https://" />
 
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="css/index.scss/index_main.css" />
 
-    <title>Document</title>
+    <title>Mystic Mountain Market</title>
   </head>
   <body>
     <header id="top-header">
@@ -33,15 +33,55 @@
         <p>i</p>
         <p>t</p>
       </div>
-      <h1>Mystic Mountain Market LOGO</h1>
+      <img
+        src="images/logo.png"
+        alt="mystic mountain market logo blue mountain rnage with one yellow mountain. Text under the mountains with company name."
+      />
     </header>
 
     <main>
-        <div id="cauldron">
-            <p>code</p>
+      <div id="cauldron">
+        <input
+          type="radio"
+          name="menu"
+          id="menu_open"
+          class="menu_radio_button"
+        />
+        <input
+          type="radio"
+          name="menu"
+          id="menu_close"
+          class="menu_radio_button"
+        />
+
+        <label for="menu_open">
+          <img
+            id="indexburger"
+            src="images/Hamburger_icon.svg.png"
+            alt="hamburger"
+          />
+        </label>
+        <label for="menu_close"><h1 id="menu_open_img">MMM</h1> </label>
+
+        <section id="mobile_menu">
+          <a href="#">Shop</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </section>
+      </div>
+
+      <footer>
+        <p>Mystic Mountain Market</p>
+        <div id="footer-div">
+          <a href="tel:4035555555">(403)697-8420</a>
+          <p>&copy; 2022</p>
+          <div id="social-media-icons">
+            <span>f</span>
+            <span>i</span>
+            <span>t</span>
+          </div>
         </div>
-
-
+      </footer>
     </main>
   </body>
 </html>
