@@ -43,6 +43,7 @@ img {
 
 #about-body {
   display: grid;
+  grid-template-rows: 80px 50px;
   min-height: 100vh;
   width: 100%;
 }
@@ -62,8 +63,6 @@ h1 {
   z-index: 10;
   display: none;
   place-items: center;
-  width: 100%;
-  height: 100%;
   color: black;
 }
 
@@ -89,4 +88,61 @@ label {
 }
 label > img {
   width: 15%;
+}
+
+#menu_close:checked ~ #menu_open {
+  display: none;
+}
+
+#about_nav {
+  display: grid;
+  text-align: center;
+  grid-template-columns: 1fr 1fr;
+  margin: 35px 0;
+  height: 50px;
+}
+
+#about_section {
+  display: grid;
+  text-align: center;
+  margin: 45px;
+}
+
+.nav_radio_button {
+  display: none;
+}
+
+#our_products {
+  display: none;
+}
+
+#products:checked ~ #about_section > #our_products {
+  display: block;
+}
+
+#products:checked ~ #about_section > #our_story {
+  display: none;
+}
+
+@-webkit-keyframes textFade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes textFade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+p {
+  font-family: monospace;
+  -webkit-animation: textFade 5s steps(60, start);
+          animation: textFade 5s steps(60, start);
 }/*# sourceMappingURL=about.css.map */

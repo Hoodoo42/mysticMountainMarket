@@ -26,6 +26,7 @@
     <title>About</title>
   </head>
   <body id="about-body">
+    <!--MENU TOGGLE FUNCTIONALITY  -->
     <div id="hamburger_menu">
       <input
         type="radio"
@@ -53,22 +54,49 @@
       </section>
     </div>
 
-    <div id="our_story"></div>
-    <h1>Our Story</h1>
-    <p>
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta,
-      asperiores veniam numquam, neque obcaecati quam tenetur earum adipisci
-      culpa illo expedita saepe nam id alias, fugiat est delectus facere
-      reprehenderit!
-    </p>
+    <!-- ABOUT NAV TOGGLE FUNCTION -->
+    
+    <div id="about_toggle">
+        <input
+            type="radio"
+            name="about_nav"
+            id="story"
+            class="nav_radio_button"
+            />
+            <input
+            type="radio"
+            name="about_nav"
+            id="products"
+            class="nav_radio_button"
+            />
 
-    <div id="our_products"></div>
-    <h1>Our Products</h1>
-    <p>
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima, libero
-      veritatis eos corrupti voluptatum voluptate illum deserunt, fugiat quo,
-      quos delectus harum molestias necessitatibus autem est sed unde.
-      Aspernatur, perspiciatis!
-    </p>
+        <nav id="about_nav">
+            <label for="story"> <h1>Our Story</h1></label>
+            <label for="products"><h1>Our Products</h1></label>
+        </nav>
+
+        <section id="about_section">
+            <div id="our_story">
+                <h1>Our Story</h1>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta,
+                    asperiores veniam numquam, neque obcaecati quam tenetur earum adipisci
+                    culpa illo expedita saepe nam id alias, fugiat est delectus facere
+                    reprehenderit!
+                </p>
+            </div>
+
+        <div id="our_products">
+            <h1>Our Products</h1>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima, libero
+                veritatis eos corrupti voluptatum voluptate illum deserunt, fugiat quo,
+                quos delectus harum molestias necessitatibus autem est sed unde.
+                Aspernatur, perspiciatis!
+            </p>
+        </div>
+    </div>
+
+    </section>
   </body>
 </html>

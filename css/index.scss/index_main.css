@@ -70,6 +70,16 @@ footer #footer-div span {
   place-items: center;
   height: 90%;
 }
+#cauldron label {
+  display: grid;
+  place-items: center;
+}
+#cauldron label > #indexburger {
+  width: 15%;
+}
+#cauldron #menu_open_img {
+  display: none;
+}
 #cauldron .menu_radio_button {
   display: none;
 }
@@ -97,10 +107,6 @@ footer #footer-div span {
 #cauldron #menu_open:checked ~ label > #indexburger {
   display: none;
 }
-#cauldron label {
+#cauldron #menu_open:checked ~ #menu_close {
   display: grid;
-  place-items: center;
-}
-#cauldron label > #indexburger {
-  width: 15%;
 }/*# sourceMappingURL=index_main.css.map */
