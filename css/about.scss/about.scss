@@ -1,4 +1,6 @@
+@use "../general.scss/general";
 @use "../header.scss/mobile-header";
+@use "../footer.scss/footer";
 
 #about-body {
   display: grid;
@@ -13,13 +15,19 @@ h1 {
 
 // MENU TOGGLE ---------------
 
+#hamburger_menu{
+
+    margin-top: 40px;
+}
+
+
 .menu_radio_button {
   display: none;
 }
 
 #mobile_menu {
   position: absolute;
-  top: 75px;
+  top: 175px;
   left: 125px;
   z-index: 10;
 
@@ -57,6 +65,13 @@ label {
 }
 
 // ABOUT SECTION ---------------
+#about_toggle{
+    display: grid;
+    grid-template-rows: 100px;
+    margin-top: 40px;
+}
+
+
 #about_nav {
   display: grid;
   text-align: center;

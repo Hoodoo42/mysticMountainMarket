@@ -41,6 +41,23 @@ img {
   padding: 10px;
 }
 
+footer {
+  display: grid;
+  text-align: center;
+  row-gap: 10px;
+}
+footer #footer-div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+footer #footer-div span {
+  padding: 2px;
+  background-color: pink;
+  height: 20px;
+  width: 20px;
+  border-radius: 100px;
+}
+
 #about-body {
   display: grid;
   grid-template-rows: 80px 50px;
@@ -52,13 +69,17 @@ h1 {
   color: red;
 }
 
+#hamburger_menu {
+  margin-top: 40px;
+}
+
 .menu_radio_button {
   display: none;
 }
 
 #mobile_menu {
   position: absolute;
-  top: 75px;
+  top: 175px;
   left: 125px;
   z-index: 10;
   display: none;
@@ -92,6 +113,12 @@ label > img {
 
 #menu_close:checked ~ #menu_open {
   display: none;
+}
+
+#about_toggle {
+  display: grid;
+  grid-template-rows: 100px;
+  margin-top: 40px;
 }
 
 #about_nav {
