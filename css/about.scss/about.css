@@ -41,35 +41,6 @@ img {
   padding: 10px;
 }
 
-footer {
-  display: grid;
-  text-align: center;
-  row-gap: 10px;
-  padding: 15px;
-}
-footer #footer-div {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-footer #footer-div span {
-  padding: 2px;
-  background-color: pink;
-  height: 20px;
-  width: 20px;
-  border-radius: 100px;
-}
-
-#about-body {
-  display: grid;
-  grid-template-rows: 80px 50px 1fr;
-  min-height: 100vh;
-  width: 100%;
-}
-
-h1 {
-  color: red;
-}
-
 /* MENU TOGGLE --------------- */
 #hamburger_menu {
   margin-top: 40px;
@@ -109,12 +80,42 @@ label {
   display: grid;
   place-items: center;
 }
+
 label > img {
   width: 15%;
 }
 
 #menu_close:checked ~ #menu_open {
   display: none;
+}
+
+footer {
+  display: grid;
+  text-align: center;
+  row-gap: 10px;
+  padding: 15px;
+}
+footer #footer-div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+footer #footer-div span {
+  padding: 2px;
+  background-color: pink;
+  height: 20px;
+  width: 20px;
+  border-radius: 100px;
+}
+
+#about-body {
+  display: grid;
+  grid-template-rows: 80px 50px 1fr;
+  min-height: 100vh;
+  width: 100%;
+}
+
+h1 {
+  color: red;
 }
 
 #about_toggle {

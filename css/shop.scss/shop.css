@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  min-height: 100vh;
+  width: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+#top-header {
+  display: grid;
+  background-color: lightgray;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+#top-header > #social-media {
+  display: grid;
+  grid-template-columns: 2fr 25px 25px 25px;
+  -moz-column-gap: 7px;
+       column-gap: 7px;
+}
+#top-header > #social-media > p {
+  text-align: center;
+  background-color: pink;
+  height: 20px;
+  width: 20px;
+  border-radius: 100px;
+  padding: 2px;
+}
+#top-header > img {
+  width: 50%;
+  text-align: center;
+  justify-self: center;
+  padding: 10px;
+}
+
+footer {
+  display: grid;
+  text-align: center;
+  row-gap: 10px;
+  padding: 15px;
+}
+footer #footer-div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+footer #footer-div span {
+  padding: 2px;
+  background-color: pink;
+  height: 20px;
+  width: 20px;
+  border-radius: 100px;
+}
+
+/* MENU TOGGLE --------------- */
+#hamburger_menu {
+  margin-top: 40px;
+}
+
+.menu_radio_button {
+  display: none;
+}
+
+#mobile_menu {
+  position: absolute;
+  top: 175px;
+  left: 125px;
+  z-index: 10;
+  display: none;
+  place-items: center;
+  color: black;
+}
+
+#menu_open:checked ~ #mobile_menu {
+  display: block;
+}
+
+#navburger_close {
+  display: none;
+}
+
+#menu_open:checked ~ label > #navburger_close {
+  display: grid;
+}
+
+#menu_open:checked ~ label > #navburger_open {
+  display: none;
+}
+
+label {
+  display: grid;
+  place-items: center;
+}
+
+label > img {
+  width: 15%;
+}
+
+#menu_close:checked ~ #menu_open {
+  display: none;
+}
+
+#shop-body {
+  display: grid;
+  grid-template-rows: 100px 100px 1fr;
+  min-height: 100vh;
+  width: 100%;
+}
+
+#shop_toggle {
+  display: grid;
+}
+
+#shop_nav {
+  overflow-x: scroll;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+  width: 100vw;
+  font-size: 2rem;
+}
+
+.nav_radio_button {
+  display: none;
+}
+
+#category_brooms,
+#category_potions,
+#category_ingredients,
+#category_spellbooks {
+  display: none;
+}
+
+#brooms:checked ~ #shop_section > #category_brooms {
+  display: grid;
+  place-self: center;
+}
+#brooms:checked ~ #shop_section > #category_cauldrons {
+  display: none;
+}
+
+#potions:checked ~ #shop_section > #category_potions {
+  display: grid;
+}
+#potions:checked ~ #shop_section > #category_cauldrons {
+  display: none;
+}
+
+#ingredients:checked ~ #shop_section > #category_ingredients {
+  display: grid;
+}
+#ingredients:checked ~ #shop_section > #category_cauldrons {
+  display: none;
+}
+
+#spellbooks:checked ~ #shop_section > #category_spellbooks {
+  display: grid;
+}
+#spellbooks:checked ~ #shop_section > #category_cauldrons {
+  display: none;
+}
+
+.category {
+  display: grid;
+  place-items: center;
+}
+
+article {
+  display: grid;
+  justify-items: center;
+  width: 90%;
+}
+
+#shop_section img {
+  width: 100%;
+  height: 100%;
+}
+
+#shop_section .broom_img {
+  width: 100%;
+  height: 70%;
+}/*# sourceMappingURL=shop.css.map */

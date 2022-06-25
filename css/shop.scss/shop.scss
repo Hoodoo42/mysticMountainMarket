@@ -1,0 +1,102 @@
+@use "../header.scss/mobile-header";
+@use "../footer.scss/footer";
+@use "../nav.scss/mobile_nav";
+
+#shop-body {
+  display: grid;
+  grid-template-rows: 100px 100px 1fr;
+
+  min-height: 100vh;
+  width: 100%;
+}
+
+// SHOP NAV MENU STYLING -------------------
+#shop_toggle {
+  display: grid;
+}
+
+#shop_nav {
+  overflow-x: scroll;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 15px;
+
+  width: 100vw;
+  font-size: 2rem;
+}
+// SHOP NAV TOGGLE -------------------------------
+
+.nav_radio_button {
+  display: none;
+}
+
+#category_brooms,
+#category_potions,
+#category_ingredients,
+#category_spellbooks {
+  display: none;
+}
+
+#brooms:checked ~ #shop_section {
+  > #category_brooms {
+    display: grid;
+    place-self: center;
+  }
+
+  > #category_cauldrons {
+    display: none;
+  }
+}
+
+#potions:checked ~ #shop_section {
+  > #category_potions {
+    display: grid;
+  }
+
+  > #category_cauldrons {
+    display: none;
+  }
+}
+
+#ingredients:checked ~ #shop_section {
+  > #category_ingredients {
+    display: grid;
+  }
+
+  > #category_cauldrons {
+    display: none;
+  }
+}
+
+#spellbooks:checked ~ #shop_section {
+  > #category_spellbooks {
+    display: grid;
+  }
+
+  > #category_cauldrons {
+    display: none;
+  }
+}
+
+// SHOP ITEMS SECTION STYLING -------------------
+
+.category {
+  display: grid;
+  place-items: center;
+}
+
+article {
+  display: grid;
+  justify-items: center;
+  width: 90%;
+}
+
+#shop_section img {
+  width: 100%;
+  height: 100%;
+}
+
+#shop_section .broom_img {
+  width: 100%;
+  height: 70%;
+}
