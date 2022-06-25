@@ -1,0 +1,53 @@
+
+
+/* MENU TOGGLE --------------- */
+
+#hamburger_menu{
+
+    margin-top: 40px;
+}
+
+
+.menu_radio_button {
+  display: none;
+}
+
+#mobile_menu {
+  position: absolute;
+  top: 175px;
+  left: 125px;
+  z-index: 10;
+
+  display: none;
+  place-items: center;
+
+  color: black;
+}
+#menu_open:checked ~ #mobile_menu {
+  display: block;
+}
+
+#navburger_close {
+  display: none;
+}
+
+#menu_open:checked ~ label > #navburger_close {
+  display: grid;
+}
+
+#menu_open:checked ~ label > #navburger_open {
+  display: none;
+}
+
+label {
+  display: grid;
+  place-items: center;
+}
+
+label > img {
+    width: 15%;
+}
+
+#menu_close:checked ~ #menu_open {
+  display: none;
+}

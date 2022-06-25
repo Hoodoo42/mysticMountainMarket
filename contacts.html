@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <meta name="description" content="" />
     <meta name="author" content="" />
     <meta name="kw" content="" />
@@ -22,24 +22,65 @@
     <meta name="twitter:image" content="https://" />
 
     <link rel="stylesheet" href="css/contacts.scss/contacts.css" />
-  
+
     <title>Contact Us</title>
-
-
-</head>
-<body>
+  </head>
+  <body id="contacts-body">
     <header id="top-header">
-        <div id="social-media">
-          <a href="tel:4035555555">(403)697-8420</a>
-          <p>f</p>
-          <p>i</p>
-          <p>t</p>
-        </div>
-        <img
-          src="images/logo.png"
-          alt="mystic mountain market logo blue mountain rnage with one yellow mountain. Text under the mountains with company name."
+      <div id="social-media">
+        <a href="tel:4035555555">(403)697-8420</a>
+        <p>f</p>
+        <p>i</p>
+        <p>t</p>
+      </div>
+      <img
+        src="images/logo.png"
+        alt="mystic mountain market logo blue mountain rnage with one yellow mountain. Text under the mountains with company name."
+      />
+    </header>
+      <!--MENU TOGGLE FUNCTIONALITY  -->
+      <div id="hamburger_menu">
+        <input
+          type="radio"
+          name="menu"
+          id="menu_open"
+          class="menu_radio_button"
         />
-      </header>
-    <h1>Hello!</h1>
-</body>
+        <input
+          type="radio"
+          name="menu"
+          id="menu_close"
+          class="menu_radio_button"
+        />
+  
+        <label for="menu_open">
+          <img id="navburger_open" src="images/navburger.png" alt="hamburger" />
+        </label>
+        <label for="menu_close">
+          <img id="navburger_close" src="images/check.png" alt="hamburger" />
+        </label>
+        <section id="mobile_menu">
+          <a href="index.html">Home</a>
+          <a href="#">Shop</a>
+          <a href="about.html">About</a>
+        </section>
+      </div>
+  
+
+    <main>
+      <h1>Contact Us</h1>
+    </main>
+    <footer>
+      <p>Mystic Mountain Market</p>
+      <div id="footer-div">
+        <a href="tel:4035555555">(403)697-8420</a>
+        <p>&copy; 2022</p>
+        <div id="social-media-icons">
+          <span>f</span>
+          <span>i</span>
+          <span>t</span>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

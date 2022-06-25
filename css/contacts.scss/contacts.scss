@@ -1,5 +1,21 @@
 @use "../header.scss/mobile-header";
+@use "../footer.scss/footer";
+@use "../nav.scss/mobile_nav";
 
 h1{
     color: red;
 }
+
+#contacts-body {
+    display: grid;
+    grid-template-rows: 100px 100px 1fr;
+  
+    min-height: 100vh;
+    width: 100%;
+  }
+
+  main{
+    display: grid;
+    text-align: center;
+    margin-top: 40px;
+  }

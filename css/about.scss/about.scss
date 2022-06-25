@@ -4,7 +4,7 @@
 
 #about-body {
   display: grid;
-  grid-template-rows: 80px 50px;
+  grid-template-rows: 80px 50px 1fr;
   min-height: 100vh;
   width: 100%;
 }
@@ -13,7 +13,8 @@ h1 {
   color: red;
 }
 
-// MENU TOGGLE ---------------
+
+/* MENU TOGGLE --------------- */
 
 #hamburger_menu{
 
@@ -55,14 +56,17 @@ h1 {
 label {
   display: grid;
   place-items: center;
+
   > img {
     width: 15%;
-  }
 }
+}
+
 
 #menu_close:checked ~ #menu_open {
   display: none;
 }
+
 
 // ABOUT SECTION ---------------
 #about_toggle{
@@ -121,7 +125,7 @@ label {
     
   }
   
-  p {
+ #about_section p {
     font-family: monospace;
     animation: textFade 5s steps(60, start)
   }
