@@ -13,6 +13,18 @@ img {
   width: 100%;
 }
 
+h1 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+p {
+  font-size: 1.3rem;
+}
+
 #top-header {
   display: grid;
   background-color: lightgray;
@@ -127,7 +139,7 @@ h1 {
 #about_nav {
   display: grid;
   text-align: center;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 0.8fr 1fr;
   margin: 35px 0;
   height: 50px;
 }

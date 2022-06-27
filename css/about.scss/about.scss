@@ -15,6 +15,7 @@ h1 {
 }
 
 
+
 // ABOUT SECTION ---------------
 #about_toggle{
     display: grid;
@@ -26,7 +27,7 @@ h1 {
 #about_nav {
   display: grid;
   text-align: center;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 0.8fr 1fr;
 
   margin: 35px 0;
   height: 50px;

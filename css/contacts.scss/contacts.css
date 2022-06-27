@@ -13,6 +13,18 @@ img {
   width: 100%;
 }
 
+h1 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+p {
+  font-size: 1.3rem;
+}
+
 #top-header {
   display: grid;
   background-color: lightgray;
@@ -120,6 +132,12 @@ h1 {
 
 main {
   display: grid;
+  grid-template-rows: 7vh 3vh 3vh 6vh 9vh;
   text-align: center;
-  margin-top: 40px;
+  margin: 40px 0;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
 }/*# sourceMappingURL=contacts.css.map */

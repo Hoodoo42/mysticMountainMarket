@@ -16,6 +16,11 @@ h1{
 
   main{
     display: grid;
+    grid-template-rows: 7vh 3vh 3vh 6vh 9vh;;
     text-align: center;
-    margin-top: 40px;
+    margin: 40px 0;
+}
+  iframe{
+    width: 100%;
+    height: 100%;
   }
