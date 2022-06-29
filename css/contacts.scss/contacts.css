@@ -28,17 +28,20 @@ p {
 
 #top-header {
   display: grid;
-  grid-template-rows: 1fr 150px;
+  grid-template-rows: 110px 65px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
 }
 #top-header > #social-media {
   display: grid;
-  grid-template-columns: 25px 25px 25px;
-  justify-self: end;
+  grid-template-columns: 70px 70px 70px;
+  justify-self: center;
   -moz-column-gap: 7px;
        column-gap: 7px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 #top-header > #social-media > p {
   text-align: center;
@@ -93,8 +96,8 @@ a {
 
 #mobile_menu {
   position: absolute;
-  top: 230px;
-  left: 45px;
+  top: 270px;
+  left: 25px;
   z-index: 10;
   display: none;
   place-items: center;
@@ -144,7 +147,7 @@ h3 {
 
 #contacts-body {
   display: grid;
-  grid-template-rows: 100px 160px 1fr;
+  grid-template-rows: 140px 130px 1fr;
   min-height: 100vh;
   width: 100%;
 }
