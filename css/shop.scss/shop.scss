@@ -10,6 +10,10 @@
   width: 100%;
 }
 
+main {
+  margin-top: 75px;
+}
+
 // SHOP NAV MENU STYLING -------------------
 #shop_toggle {
   display: grid;
@@ -23,11 +27,13 @@
 
   width: 100vw;
   font-size: 2rem;
+
+ > label {
+    padding: 10px;
+  }
 }
 
-label{
-    padding: 10px;
-}
+
 // SHOP NAV TOGGLE -------------------------------
 
 .nav_radio_button {
@@ -82,27 +88,22 @@ label{
   }
 }
 
-
 // SHOP ITEMS SECTION STYLING -------------------
 
-
-.description{
-    padding: 20px;
+.description {
+  padding: 20px;
 }
 
 .category {
   display: grid;
   place-items: center;
-
-
-
 }
 
 article {
   display: grid;
   justify-items: center;
   text-align: center;
-  grid-template-rows: 1fr 335px;  
+  grid-template-rows: 1fr 335px;
 
   padding: 20px;
 }
@@ -111,6 +112,3 @@ article {
   width: 100%;
   height: 100%;
 }
-
-
-

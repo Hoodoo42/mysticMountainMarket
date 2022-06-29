@@ -1,12 +1,12 @@
-
-
 /* MENU TOGGLE --------------- */
 
-#hamburger_menu{
-
-    margin-top: 40px;
+a {
+  font-size: 1.7rem;
 }
 
+#hamburger_menu {
+  margin-top: 40px;
+}
 
 .menu_radio_button {
   display: none;
@@ -14,8 +14,8 @@
 
 #mobile_menu {
   position: absolute;
-  top: 175px;
-  left: 125px;
+  top: 230px;
+  left: 45px;
   z-index: 10;
 
   display: none;
@@ -24,8 +24,16 @@
   color: black;
 }
 #menu_open:checked ~ #mobile_menu {
-  display: block;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  > #home{
+    justify-self: end;
+  }
+
 }
+
+
 
 #navburger_close {
   display: none;
@@ -45,7 +53,7 @@ label {
 }
 
 label > img {
-    width: 15%;
+  width: 20%;
 }
 
 #menu_close:checked ~ #menu_open {

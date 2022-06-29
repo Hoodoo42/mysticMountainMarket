@@ -10,7 +10,8 @@ footer{
 
     #footer-div{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 2fr 1fr 1fr;
+        margin: 10px;
 
         span{
             padding: 2px;
@@ -22,5 +23,11 @@ footer{
             border-radius: 100px;
           
         }
+        a{
+            font-size: 1.5rem;
+            justify-self: start;
+        }
+    
     }
+
 }

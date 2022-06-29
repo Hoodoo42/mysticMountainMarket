@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: monospace;
 }
 
 body {
@@ -22,19 +23,20 @@ h4 {
 }
 
 p {
-  font-size: 1.3rem;
+  font-size: 1.7rem;
 }
 
 #top-header {
   display: grid;
-  background-color: lightgray;
+  grid-template-rows: 1fr 150px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
 }
 #top-header > #social-media {
   display: grid;
-  grid-template-columns: 2fr 25px 25px 25px;
+  grid-template-columns: 25px 25px 25px;
+  justify-self: end;
   -moz-column-gap: 7px;
        column-gap: 7px;
 }
@@ -47,13 +49,17 @@ p {
   padding: 2px;
 }
 #top-header > img {
-  width: 50%;
+  width: 80%;
   text-align: center;
   justify-self: center;
   padding: 10px;
 }
 
 /* MENU TOGGLE --------------- */
+a {
+  font-size: 1.7rem;
+}
+
 #hamburger_menu {
   margin-top: 40px;
 }
@@ -64,8 +70,8 @@ p {
 
 #mobile_menu {
   position: absolute;
-  top: 175px;
-  left: 125px;
+  top: 230px;
+  left: 45px;
   z-index: 10;
   display: none;
   place-items: center;
@@ -73,7 +79,11 @@ p {
 }
 
 #menu_open:checked ~ #mobile_menu {
-  display: block;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+#menu_open:checked ~ #mobile_menu > #home {
+  justify-self: end;
 }
 
 #navburger_close {
@@ -94,7 +104,7 @@ label {
 }
 
 label > img {
-  width: 15%;
+  width: 20%;
 }
 
 #menu_close:checked ~ #menu_open {
@@ -109,7 +119,8 @@ footer {
 }
 footer #footer-div {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 2fr 1fr 1fr;
+  margin: 10px;
 }
 footer #footer-div span {
   padding: 2px;
@@ -118,10 +129,14 @@ footer #footer-div span {
   width: 20px;
   border-radius: 100px;
 }
+footer #footer-div a {
+  font-size: 1.5rem;
+  justify-self: start;
+}
 
 #about-body {
   display: grid;
-  grid-template-rows: 80px 50px 1fr;
+  grid-template-rows: 100px 100px 1fr;
   min-height: 100vh;
   width: 100%;
 }

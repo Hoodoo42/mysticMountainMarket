@@ -5,13 +5,14 @@
 
 #top-header {
   display: grid;
-
-  background-color: lightgray;
+  grid-template-rows: 1fr 150px;
+ 
   height: fit-content;
 
   > #social-media {
     display: grid;
-    grid-template-columns: 2fr 25px 25px 25px;
+    grid-template-columns: 25px 25px 25px;
+    justify-self: end;
     column-gap: 7px;
 
     > p {
@@ -26,7 +27,7 @@
   }
 
   > img {
-    width: 50%;
+    width: 80%;
     text-align: center;
     justify-self: center;
 
