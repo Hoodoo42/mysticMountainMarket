@@ -138,6 +138,10 @@ h1 {
   color: red;
 }
 
+h3 {
+  font-size: 2rem;
+}
+
 #contacts-body {
   display: grid;
   grid-template-rows: 100px 160px 1fr;
