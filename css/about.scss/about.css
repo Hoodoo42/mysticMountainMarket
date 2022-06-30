@@ -140,6 +140,9 @@ footer #footer-div a {
 #about-body {
   display: grid;
   grid-template-rows: 140px 100px 1fr;
+  background-image: url(/images/background2.jpg);
+  background-size: 910px;
+  background-repeat: no-repeat;
   min-height: 100vh;
   width: 100%;
 }
@@ -203,6 +206,12 @@ h1 {
 }
 #about_section p {
   font-family: monospace;
-  -webkit-animation: textFade 5s steps(60, start);
-          animation: textFade 5s steps(60, start);
+  -webkit-animation: textFade 5s steps(60, end);
+          animation: textFade 5s steps(60, end);
+}
+
+@media only screen and (min-width: 600px) {
+  #about-body {
+    background-size: contain;
+  }
 }/*# sourceMappingURL=about.css.map */

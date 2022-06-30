@@ -81,11 +81,89 @@ footer #footer-div a {
   justify-self: start;
 }
 
+@-webkit-keyframes shopUp {
+  from {
+    bottom: -135px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes shopUp {
+  from {
+    bottom: -135px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0px;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes aboutUp {
+  from {
+    bottom: -90px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0px;
+    opacity: 1;
+  }
+}
+@keyframes aboutUp {
+  from {
+    bottom: -90px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0px;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes contactUp {
+  from {
+    bottom: -40px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0px;
+    opacity: 1;
+  }
+}
+@keyframes contactUp {
+  from {
+    bottom: -40px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0px;
+    opacity: 1;
+  }
+}
+#menu_open:checked ~ #close #mobile_menu > #shop {
+  position: relative;
+  -webkit-animation: shopUp 3s ease-out;
+          animation: shopUp 3s ease-out;
+}
+#menu_open:checked ~ #close #mobile_menu > #about {
+  position: relative;
+  -webkit-animation: aboutUp 3s ease-out;
+          animation: aboutUp 3s ease-out;
+}
+#menu_open:checked ~ #close #mobile_menu > #contact {
+  position: relative;
+  -webkit-animation: contactUp 3s ease-out;
+          animation: contactUp 3s ease-out;
+}
+
 #index-body {
   display: grid;
   grid-template-rows: 200px 1fr;
-  /* background-image: url(/images/background.jpg); */
-  background-size: cover;
+  background-image: url(/images/background2.jpg);
+  background-size: contain;
+  background-repeat: repeat-y;
   min-height: 100vh;
   width: 100%;
 }
@@ -153,4 +231,10 @@ main {
   width: 100%;
   height: 145px;
   color: black;
+}
+
+@media only screen and (min-width: 600px) {
+  #index-body {
+    background-size: contain;
+  }
 }/*# sourceMappingURL=index_main.css.map */
