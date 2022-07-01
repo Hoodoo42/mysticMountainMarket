@@ -235,6 +235,9 @@ main {
 #potions:checked ~ #shop_section > #category_potions {
   display: grid;
 }
+#potions:checked ~ #shop_section > #potions_description {
+  display: block;
+}
 #potions:checked ~ #shop_section > #category_cauldrons,
 #potions:checked ~ #shop_section #cauldron_description,
 #potions:checked ~ #shop_section #brooms_description {

@@ -76,6 +76,9 @@ main {
   > #category_potions {
     display: grid;
   }
+  > #potions_description{
+    display: block;
+  }
 
   > #category_cauldrons,
   #cauldron_description,
@@ -88,6 +91,7 @@ main {
   > #category_ingredients {
     display: grid;
   }
+  
 
   > #category_cauldrons,
   #cauldron_description,
