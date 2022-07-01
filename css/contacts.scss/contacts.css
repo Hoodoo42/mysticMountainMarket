@@ -34,9 +34,6 @@ p {
 #top-header {
   display: grid;
   grid-template-rows: 110px 65px;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
 }
 #top-header > #social-media {
   display: grid;
@@ -68,6 +65,7 @@ p {
 @media only screen and (min-width: 600px) {
   #top-header {
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: none;
   }
   #top-header > #social-media {
     justify-self: end;
