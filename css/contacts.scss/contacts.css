@@ -26,6 +26,11 @@ p {
   font-size: 1.7rem;
 }
 
+@media only screen and (min-width: 600px) {
+  menu > a {
+    font-size: 2.5rem;
+  }
+}
 #top-header {
   display: grid;
   grid-template-rows: 110px 65px;
@@ -35,21 +40,23 @@ p {
 }
 #top-header > #social-media {
   display: grid;
-  grid-template-columns: 70px 70px 70px;
+  grid-template-columns: 1fr 1fr 1fr;
   justify-self: center;
   -moz-column-gap: 7px;
        column-gap: 7px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  place-items: center;
 }
-#top-header > #social-media > p {
-  text-align: center;
-  background-color: pink;
-  height: 20px;
-  width: 20px;
-  border-radius: 100px;
-  padding: 2px;
+#top-header > #social-media > a {
+  width: 60%;
+}
+#top-header > #social-media > a:nth-child(1) {
+  justify-self: end;
+}
+#top-header > #social-media > a:nth-child(3) {
+  justify-self: start;
 }
 #top-header > img {
   width: 80%;
@@ -58,6 +65,15 @@ p {
   padding: 10px;
 }
 
+@media only screen and (min-width: 600px) {
+  #top-header {
+    grid-template-columns: 1fr 1fr;
+  }
+  #top-header > #social-media {
+    justify-self: end;
+    align-self: center;
+  }
+}
 footer {
   display: grid;
   text-align: center;
@@ -95,21 +111,16 @@ a {
 }
 
 #mobile_menu {
-  position: absolute;
-  top: 270px;
-  left: 25px;
   z-index: 10;
   display: none;
   place-items: center;
+  width: 100%;
   color: black;
 }
 
 #menu_open:checked ~ #mobile_menu {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-}
-#menu_open:checked ~ #mobile_menu > #home {
-  justify-self: end;
 }
 
 #navburger_close {
@@ -137,6 +148,32 @@ label > img {
   display: none;
 }
 
+#tablet-menu {
+  display: none;
+}
+
+@media only screen and (min-width: 600px) {
+  #hamburger_menu {
+    display: none;
+  }
+
+  #tablet-menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    text-align: center;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  #tablet-menu > #c-home, #tablet-menu #i-shop, #tablet-menu #s-home, #tablet-menu #a-home {
+    justify-self: end;
+    padding: 15px;
+  }
+  #tablet-menu > #i-contact, #tablet-menu #s-contact, #tablet-menu #a-contact, #tablet-menu #c-about {
+    justify-self: start;
+  }
+}
 h1 {
   color: red;
 }

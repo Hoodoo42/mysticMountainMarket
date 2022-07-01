@@ -3,10 +3,12 @@
 @use "../nav.scss/mobile_nav";
 @use "../footer.scss/footer";
 
+@use "../tablet-styling.scss/tablet-styling";
+
 #about-body {
   display: grid;
   grid-template-rows: 140px 100px 1fr;
-  background-image: url(/images/background2.jpg);
+ /* background-image: url(/images/background2.jpg);*/
   background-size: 910px;
   background-repeat: no-repeat;
   min-height: 100vh;
@@ -76,11 +78,3 @@ h1 {
 }
 
 
-// RESPONSIVE DESIGN ---------------------
-
-@media only screen and (min-width: 600px){
-
-  #about-body{
-    background-size: contain;
-  }
-}

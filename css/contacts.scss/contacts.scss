@@ -2,6 +2,8 @@
 @use "../footer.scss/footer";
 @use "../nav.scss/mobile_nav";
 
+@use "../tablet-styling.scss/tablet-styling";
+
 h1 {
   color: red;
 }

@@ -13,23 +13,19 @@ a {
 }
 
 #mobile_menu {
-  position: absolute;
-  top: 270px;
-  left: 25px;
+ 
   z-index: 10;
 
   display: none;
   place-items: center;
-
+  width: 100%;
   color: black;
 }
 #menu_open:checked ~ #mobile_menu {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 
-  > #home {
-    justify-self: end;
-  }
+
 }
 
 #navburger_close {

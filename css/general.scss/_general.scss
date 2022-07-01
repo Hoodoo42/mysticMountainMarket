@@ -11,7 +11,6 @@ $main-color: pink;
 body {
   display: grid;
 
-
   min-height: 100vh;
   width: 100%;
 }
@@ -20,14 +19,20 @@ img {
   width: 100%;
 }
 
-
-
-h1{
+h1 {
   font-size: 2rem;
 }
-h4{
+h4 {
   font-size: 1.2rem;
 }
-p{
+p {
   font-size: 1.7rem;
+}
+
+// MEDIA QUERIES --------------------
+
+@media only screen and (min-width: 600px) {
+  menu > a {
+    font-size: 2.5rem;
+  }
 }

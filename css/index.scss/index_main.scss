@@ -2,68 +2,64 @@
 @use "../header.scss/mobile-header";
 @use "../footer.scss/footer";
 
+@use "../tablet-styling.scss/tablet-styling";
 
 // TRANSITIONS------
-  @keyframes shopUp {
-     from{
-      bottom: -135px;
-      opacity: 0;
-     }
-     to{
-      bottom: 0px;
-      opacity: 1;
-     }
+@keyframes shopUp {
+  from {
+    bottom: -135px;
+    opacity: 0;
   }
-
-  @keyframes aboutUp {
-    from{
-     bottom: -90px;
-     opacity: 0;
-    }
-    to{
-     bottom: 0px;
-     opacity: 1;
-    }
+  to {
+    bottom: 0px;
+    opacity: 1;
   }
-    @keyframes contactUp {
-      from{
-       bottom: -40px;
-       opacity: 0;
-      }
-      to{
-       bottom: 0px;
-       opacity: 1;
-      }
- }
+}
 
-  #menu_open:checked ~ #close #mobile_menu {
-   
-    > #shop{
+@keyframes aboutUp {
+  from {
+    bottom: -90px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0px;
+    opacity: 1;
+  }
+}
+@keyframes contactUp {
+  from {
+    bottom: -40px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0px;
+    opacity: 1;
+  }
+}
+
+#menu_open:checked ~ #close #mobile_menu {
+  > #shop {
     position: relative;
     animation: shopUp 3s ease-out;
-    }
-
-    > #about{
-      position: relative;
-    animation: aboutUp 3s ease-out;
-    }
-
-    > #contact{
-      position: relative;
-    animation: contactUp 3s ease-out;
-    }
-
-
   }
 
+  > #about {
+    position: relative;
+    animation: aboutUp 3s ease-out;
+  }
+
+  > #contact {
+    position: relative;
+    animation: contactUp 3s ease-out;
+  }
+}
 
 #index-body {
   display: grid;
-  grid-template-rows: 200px 1fr;
+  grid-template-rows: auto 1fr;
   background-image: url(/images/background2.jpg); 
-  background-size: contain;
- 
-  background-repeat: repeat-y;
+  background-size: cover;
+  background-repeat: no-repeat;
 
   min-height: 100vh;
   width: 100%;
@@ -140,14 +136,19 @@ main {
   width: 100%;
   height: 145px;
   color: black;
+
 }
+
+
 
 // MEDIA QUERIES ---------------------
 
+@media only screen and (min-width: 600px) {
+  #cauldron {
+    display: none;
+  }
 
-@media only screen and (min-width: 600px){
-
-  #index-body{
-    background-size: contain;
+  main {
+    background-image: none;
   }
 }
