@@ -95,32 +95,6 @@ footer #footer-div a {
   justify-self: start;
 }
 
-#tablet-menu {
-  display: none;
-}
-
-@media only screen and (min-width: 600px) {
-  #hamburger_menu {
-    display: none;
-  }
-
-  #tablet-menu {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    place-items: center;
-    text-align: center;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-  }
-  #tablet-menu > #c-home, #tablet-menu #i-shop, #tablet-menu #s-home, #tablet-menu #a-home {
-    justify-self: end;
-    padding: 15px;
-  }
-  #tablet-menu > #i-contact, #tablet-menu #s-contact, #tablet-menu #a-contact, #tablet-menu #c-about {
-    justify-self: start;
-  }
-}
 @-webkit-keyframes shopUp {
   from {
     bottom: -135px;
@@ -131,6 +105,7 @@ footer #footer-div a {
     opacity: 1;
   }
 }
+
 @keyframes shopUp {
   from {
     bottom: -135px;
@@ -207,7 +182,7 @@ footer #footer-div a {
   width: 100%;
 }
 
-main {
+#mobile_main {
   background-image: url(/images/menu_cauldron.png);
   background-position: center;
   background-size: cover;
@@ -272,12 +247,62 @@ main {
   color: black;
 }
 
+#tablet-menu,
+#tablet_main {
+  display: none;
+}
+
 @media only screen and (min-width: 600px) {
-  #cauldron {
+  #mobile_main {
+    background-image: none;
     display: none;
   }
+}
+#hamburger_menu {
+  display: none;
+}
 
-  main {
-    background-image: none;
-  }
+#index-body {
+  grid-template-rows: auto auto 1fr auto;
+}
+
+#tablet-menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+  text-align: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+#tablet-menu > #c-home,
+#tablet-menu #i-shop,
+#tablet-menu #s-home,
+#tablet-menu #a-home {
+  justify-self: end;
+  padding: 15px;
+}
+#tablet-menu > #i-contact,
+#tablet-menu #s-contact,
+#tablet-menu #a-contact,
+#tablet-menu #c-about {
+  justify-self: start;
+}
+
+#tablet_main {
+  display: grid;
+  background-image: url(/images/crystalBall.png);
+  background-position: center;
+  background-size: cover;
+}
+#tablet_main > #crystal {
+  display: grid;
+  place-items: center;
+  height: 90%;
+}
+#tablet_main #shopop {
+  display: none;
+}
+#tablet_main #i-shop:hover ~ #shopop {
+  display: block;
 }/*# sourceMappingURL=index_main.css.map */

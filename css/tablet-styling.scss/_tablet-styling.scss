@@ -1,34 +1,3 @@
 
 
 
-#tablet-menu{
-  display: none;
-}
-
-
-@media only screen and (min-width:600px){
-
-  #hamburger_menu{
-  display: none;
-}
-
-#tablet-menu {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-
-  place-items: center;
-  text-align: center;
-
-  height: fit-content;
-
-> #c-home, #i-shop, #s-home, #a-home{
-  justify-self: end;
-  padding: 15px;
-}
-> #i-contact, #s-contact, #a-contact, #c-about{
-  justify-self: start;
-}
-
-} 
-}
-

@@ -146,32 +146,6 @@ label > img {
   display: none;
 }
 
-#tablet-menu {
-  display: none;
-}
-
-@media only screen and (min-width: 600px) {
-  #hamburger_menu {
-    display: none;
-  }
-
-  #tablet-menu {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    place-items: center;
-    text-align: center;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-  }
-  #tablet-menu > #c-home, #tablet-menu #i-shop, #tablet-menu #s-home, #tablet-menu #a-home {
-    justify-self: end;
-    padding: 15px;
-  }
-  #tablet-menu > #i-contact, #tablet-menu #s-contact, #tablet-menu #a-contact, #tablet-menu #c-about {
-    justify-self: start;
-  }
-}
 #shop-body {
   display: grid;
   grid-template-rows: 140px 100px 1fr;

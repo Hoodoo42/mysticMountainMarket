@@ -57,7 +57,7 @@
 #index-body {
   display: grid;
   grid-template-rows: auto 1fr;
-  background-image: url(/images/background2.jpg); 
+  background-image: url(/images/background2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 
@@ -66,7 +66,7 @@
 }
 // MENU DEFAULT CLOSE
 
-main {
+#mobile_main {
   background-image: url(/images/menu_cauldron.png);
   background-position: center;
   background-size: cover;
@@ -136,19 +136,72 @@ main {
   width: 100%;
   height: 145px;
   color: black;
-
 }
 
-
-
+#tablet-menu,
+#tablet_main {
+  display: none;
+}
 // MEDIA QUERIES ---------------------
 
 @media only screen and (min-width: 600px) {
-  #cauldron {
+  #mobile_main {
+    background-image: none;
     display: none;
   }
+}
 
-  main {
-    background-image: none;
+#hamburger_menu {
+  display: none;
+}
+
+// TABLET VIEW ---------------------
+#index-body {
+  grid-template-rows: auto auto 1fr auto;
+}
+
+#tablet-menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  place-items: center;
+  text-align: center;
+
+  height: fit-content;
+
+  > #c-home,
+  #i-shop,
+  #s-home,
+  #a-home {
+    justify-self: end;
+    padding: 15px;
+  }
+  > #i-contact,
+  #s-contact,
+  #a-contact,
+  #c-about {
+    justify-self: start;
+  }
+}
+
+#tablet_main {
+  display: grid;
+  background-image: url(/images/crystalBall.png);
+  background-position: center;
+  background-size: cover;
+
+  > #crystal {
+    display: grid;
+    place-items: center;
+    height: 90%;
+  }
+
+
+  #shopop{
+    display:none;
+  }
+
+  #i-shop:hover ~ #shopop{
+    display: block;
   }
 }
