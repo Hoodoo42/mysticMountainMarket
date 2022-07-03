@@ -15,8 +15,13 @@
   width: 100%;
 }
 
+#about-main{
+  display: grid;
+  grid-template-rows: 1fr;
+}
+
 h1 {
-  color: red;
+  color: blue;
 }
 
 // ABOUT SECTION ---------------
@@ -24,8 +29,17 @@ h1 {
   display: grid;
   grid-template-rows: 100px;
   margin-top: 40px;
+
 }
 
+#scroll{
+   position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+
+    transform: translateY(352px) scale(1.5);
+}
 #about_nav {
   display: grid;
   text-align: center;
@@ -40,6 +54,9 @@ h1 {
   text-align: center;
 
   margin: 45px;
+
+
+
 }
 // About Nav Toggle Function
 .nav_radio_button {

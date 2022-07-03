@@ -1,3 +1,31 @@
+#tablet-menu,
+#tablet_main {
+  display: none;
+}
+
+@media only screen and (min-width: 600px) {
+// MOBILE
+    #mobile_main {
+        background-image: none;
+        display: none;
+      }
+    
+    
+    #hamburger_menu {
+      display: none;
+    }
 
 
+    // TABLET
+    #tablet_main{
+        display: grid;
+    }
 
+    #tablet-menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+      
+        place-items: center;
+        text-align: center;
+}
+}

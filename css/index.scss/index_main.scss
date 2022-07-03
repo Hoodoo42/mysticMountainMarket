@@ -138,22 +138,10 @@
   color: black;
 }
 
-#tablet-menu,
-#tablet_main {
-  display: none;
-}
 // MEDIA QUERIES ---------------------
 
 @media only screen and (min-width: 600px) {
-  #mobile_main {
-    background-image: none;
-    display: none;
-  }
-}
 
-#hamburger_menu {
-  display: none;
-}
 
 // TABLET VIEW ---------------------
 #index-body {
@@ -167,7 +155,7 @@
   place-items: center;
   text-align: center;
 
-  height: fit-content;
+ 
 
   > #c-home,
   #i-shop,
@@ -194,14 +182,19 @@
     display: grid;
     place-items: center;
     height: 90%;
-  }
-
-
-  #shopop{
-    display:none;
-  }
-
-  #i-shop:hover ~ #shopop{
-    display: block;
-  }
+  
+    > #shopop{
+      display:none;
+    }
+    > #aboutop{
+      display:none;
+    }
+    > #contactUs{
+      display:none;
+    }
+  
+  
+  
+}
+}
 }

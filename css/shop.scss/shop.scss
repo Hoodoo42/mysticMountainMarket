@@ -116,7 +116,10 @@ main {
 }
 
 // SHOP ITEMS SECTION STYLING -------------------
-
+.category{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+}
 .description {
   padding: 20px;
   background-color: rgb(188 188 188 / 60%);
@@ -147,3 +150,4 @@ article {
     height: 100%;
   }
 }
+

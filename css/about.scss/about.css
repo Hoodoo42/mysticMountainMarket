@@ -146,6 +146,32 @@ footer #footer-div a {
   justify-self: start;
 }
 
+#tablet-menu,
+#tablet_main {
+  display: none;
+}
+
+@media only screen and (min-width: 600px) {
+  #mobile_main {
+    background-image: none;
+    display: none;
+  }
+
+  #hamburger_menu {
+    display: none;
+  }
+
+  #tablet_main {
+    display: grid;
+  }
+
+  #tablet-menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    text-align: center;
+  }
+}
 #about-body {
   display: grid;
   grid-template-rows: 140px 100px 1fr;
@@ -156,14 +182,27 @@ footer #footer-div a {
   width: 100%;
 }
 
+#about-main {
+  display: grid;
+  grid-template-rows: 1fr;
+}
+
 h1 {
-  color: red;
+  color: blue;
 }
 
 #about_toggle {
   display: grid;
   grid-template-rows: 100px;
   margin-top: 40px;
+}
+
+#scroll {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+  transform: translateY(352px) scale(1.5);
 }
 
 #about_nav {
