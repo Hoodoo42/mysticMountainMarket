@@ -7,7 +7,7 @@
 
 #about-body {
   display: grid;
-  grid-template-rows: 140px 1fr;
+  grid-template-rows: 185px;
   /* background-image: url(/images/background2.jpg);*/
   background-size: 910px;
   background-repeat: no-repeat;
@@ -86,4 +86,20 @@ display: grid;
 position: absolute;
 z-index: -1;
 transform: translateX(-50px) translateY(205px) scaleY(2);
+}
+
+// MEDIA QUERIES -------------
+
+@media only screen and (min-width: 900px){
+  #scroll{
+  display: grid;
+    position: absolute;
+    z-index: -1;
+    transform: translateX(-50px) translateY(-341px) scaleY(.6);
+  }
+
+  #our_story{
+    width: 70%;
+    padding-left: 15%;
+  }
 }

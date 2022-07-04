@@ -92,7 +92,25 @@ footer #footer-div a {
   font-size: 1.5rem;
   justify-self: start;
 }
+footer #footer-div #noclick_tel {
+  display: none;
+}
 
+@media only screen and (min-width: 900px) {
+  footer {
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+  }
+  footer > #footer-div > #noclick_tel {
+    display: block;
+  }
+  footer > #footer-div > #click_tel {
+    display: none;
+  }
+  footer > p {
+    font-size: 2.5rem;
+  }
+}
 #tablet-menu,
 #tablet_main {
   display: none;
@@ -114,7 +132,7 @@ footer #footer-div a {
 
   #tablet-menu {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: auto auto auto;
     place-items: center;
     text-align: center;
   }
@@ -275,44 +293,42 @@ footer #footer-div a {
     grid-template-rows: auto auto 1fr auto;
   }
 
-  #tablet-menu {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    place-items: center;
-    text-align: center;
+  #index_main {
+    background-size: contain;
+    background-repeat: repeat;
   }
-  #tablet-menu > #c-home,
+}
+#tablet-menu > #c-home,
 #tablet-menu #i-shop,
 #tablet-menu #s-home,
 #tablet-menu #a-home {
-    justify-self: end;
-    padding: 15px;
-  }
-  #tablet-menu > #i-contact,
+  justify-self: end;
+  padding: 15px;
+}
+#tablet-menu > #i-contact,
 #tablet-menu #s-contact,
 #tablet-menu #a-contact,
 #tablet-menu #c-about {
-    justify-self: start;
-  }
+  justify-self: start;
+}
 
-  #tablet_main {
-    display: grid;
-    background-image: url(/images/crystalBall.png);
-    background-position: center;
-    background-size: cover;
-  }
-  #tablet_main > #crystal {
-    display: grid;
-    place-items: center;
-    height: 90%;
-  }
-  #tablet_main > #crystal > #shopop {
-    display: none;
-  }
-  #tablet_main > #crystal > #aboutop {
-    display: none;
-  }
-  #tablet_main > #crystal > #contactUs {
-    display: none;
-  }
+#tablet_main {
+  display: grid;
+  background-image: url(/images/crystalBall.png);
+  background-position: center;
+  background-size: cover;
+}
+#tablet_main > #crystal {
+  display: grid;
+  place-items: center;
+  height: 90%;
+}
+#tablet_main > #crystal > #shopop {
+  display: none;
+}
+#tablet_main > #crystal > #aboutop {
+  display: none;
+}
+#tablet_main > #crystal > #contactUs {
+  display: none;
 }/*# sourceMappingURL=index_main.css.map */

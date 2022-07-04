@@ -26,6 +26,32 @@ footer{
             justify-self: start;
         }
     
+        #noclick_tel{
+            display: none;
+        }
     }
+
+}
+
+// MEDIA QUERIES ----------
+
+@media only screen and (min-width: 900px){
+    footer{
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+        
+        >#footer-div{
+           > #noclick_tel{
+                display: block;
+            }
+           > #click_tel{
+            display: none;
+           } 
+        }
+    >p{
+       font-size: 2.5rem;
+    }
+    }
+
 
 }

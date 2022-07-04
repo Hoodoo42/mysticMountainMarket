@@ -4,6 +4,10 @@
 
 @use "../tablet-styling.scss/tablet-styling";
 
+p{
+  margin: 0 20px;
+}
+
 h1 {
   color: red;
 }
@@ -21,11 +25,23 @@ h3 {
 
 main {
   display: grid;
-  grid-template-rows: 7vh 5vh 4vh 6vh 15vh 30vh;
+  grid-template-rows: 7vh 5vh 4vh 6vh 20vh 40vh;
   text-align: center;
   margin: 40px 0;
 }
 iframe {
-  width: 100%;
+  width: 90%;
   height: 100%;
+
+  place-self: center;
+}
+
+
+// MEDIA QUERIES -----------
+
+@media only screen and (min-width: 600px){
+
+  main{
+    grid-template-rows: 7vh 5vh 4vh 6vh 7vh 40vh;
+  }
 }

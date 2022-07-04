@@ -143,7 +143,25 @@ footer #footer-div a {
   font-size: 1.5rem;
   justify-self: start;
 }
+footer #footer-div #noclick_tel {
+  display: none;
+}
 
+@media only screen and (min-width: 900px) {
+  footer {
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+  }
+  footer > #footer-div > #noclick_tel {
+    display: block;
+  }
+  footer > #footer-div > #click_tel {
+    display: none;
+  }
+  footer > p {
+    font-size: 2.5rem;
+  }
+}
 #tablet-menu,
 #tablet_main {
   display: none;
@@ -165,14 +183,14 @@ footer #footer-div a {
 
   #tablet-menu {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: auto auto auto;
     place-items: center;
     text-align: center;
   }
 }
 #about-body {
   display: grid;
-  grid-template-rows: 140px 1fr;
+  grid-template-rows: 185px;
   /* background-image: url(/images/background2.jpg);*/
   background-size: 910px;
   background-repeat: no-repeat;
@@ -254,4 +272,18 @@ h1 {
   position: absolute;
   z-index: -1;
   transform: translateX(-50px) translateY(205px) scaleY(2);
+}
+
+@media only screen and (min-width: 900px) {
+  #scroll {
+    display: grid;
+    position: absolute;
+    z-index: -1;
+    transform: translateX(-50px) translateY(-341px) scaleY(0.6);
+  }
+
+  #our_story {
+    width: 70%;
+    padding-left: 15%;
+  }
 }/*# sourceMappingURL=about.css.map */

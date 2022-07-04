@@ -92,7 +92,25 @@ footer #footer-div a {
   font-size: 1.5rem;
   justify-self: start;
 }
+footer #footer-div #noclick_tel {
+  display: none;
+}
 
+@media only screen and (min-width: 900px) {
+  footer {
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+  }
+  footer > #footer-div > #noclick_tel {
+    display: block;
+  }
+  footer > #footer-div > #click_tel {
+    display: none;
+  }
+  footer > p {
+    font-size: 2.5rem;
+  }
+}
 /* MENU TOGGLE --------------- */
 a {
   font-size: 1.7rem;
@@ -165,11 +183,15 @@ label > img {
 
   #tablet-menu {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: auto auto auto;
     place-items: center;
     text-align: center;
   }
 }
+p {
+  margin: 0 20px;
+}
+
 h1 {
   color: red;
 }
@@ -187,12 +209,19 @@ h3 {
 
 main {
   display: grid;
-  grid-template-rows: 7vh 5vh 4vh 6vh 15vh 30vh;
+  grid-template-rows: 7vh 5vh 4vh 6vh 20vh 40vh;
   text-align: center;
   margin: 40px 0;
 }
 
 iframe {
-  width: 100%;
+  width: 90%;
   height: 100%;
+  place-self: center;
+}
+
+@media only screen and (min-width: 600px) {
+  main {
+    grid-template-rows: 7vh 5vh 4vh 6vh 7vh 40vh;
+  }
 }/*# sourceMappingURL=contacts.css.map */
