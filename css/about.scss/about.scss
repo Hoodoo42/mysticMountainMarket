@@ -7,7 +7,7 @@
 
 #about-body {
   display: grid;
-  grid-template-rows: 140px 100px 1fr;
+  grid-template-rows: 140px 1fr;
  /* background-image: url(/images/background2.jpg);*/
   background-size: 910px;
   background-repeat: no-repeat;
@@ -32,14 +32,7 @@ h1 {
 
 }
 
-#scroll{
-   position: absolute;
-    left: 0px;
-    top: 0px;
-    z-index: -1;
 
-    transform: translateY(352px) scale(1.5);
-}
 #about_nav {
   display: grid;
   text-align: center;
