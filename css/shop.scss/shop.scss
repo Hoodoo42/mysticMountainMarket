@@ -163,3 +163,15 @@ article {
 main{
   margin-top: 40px;
 }
+
+
+@media only screen and (min-width: 1000px){
+
+  #shop-body{
+    grid-template-rows: 225px 68px 106px 1fr;
+  }
+
+  #tablet-menu{
+    display: grid;
+  }
+}

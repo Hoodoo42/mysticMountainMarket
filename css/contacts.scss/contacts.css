@@ -197,7 +197,7 @@ label > img {
   }
 }
 @media only screen and (min-width: 1000px) {
-  #tablet_main, #tablet-menu {
+  #tablet_main {
     display: none;
   }
 }

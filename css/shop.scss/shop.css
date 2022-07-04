@@ -197,7 +197,7 @@ label > img {
   }
 }
 @media only screen and (min-width: 1000px) {
-  #tablet_main, #tablet-menu {
+  #tablet_main {
     display: none;
   }
 }
@@ -331,4 +331,14 @@ article {
 
 main {
   margin-top: 40px;
+}
+
+@media only screen and (min-width: 1000px) {
+  #shop-body {
+    grid-template-rows: 225px 68px 106px 1fr;
+  }
+
+  #tablet-menu {
+    display: grid;
+  }
 }/*# sourceMappingURL=shop.css.map */
