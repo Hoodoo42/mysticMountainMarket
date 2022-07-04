@@ -75,8 +75,6 @@ p {
 footer {
   display: grid;
   text-align: center;
-  row-gap: 10px;
-  padding: 15px;
 }
 footer #footer-div {
   display: grid;
@@ -133,7 +131,7 @@ a {
   display: none;
 }
 
-label {
+.ham {
   display: grid;
   place-items: center;
 }
@@ -189,7 +187,7 @@ h3 {
 
 main {
   display: grid;
-  grid-template-rows: 7vh 3vh 3vh 6vh 13vh 30vh;
+  grid-template-rows: 7vh 5vh 4vh 6vh 15vh 30vh;
   text-align: center;
   margin: 40px 0;
 }

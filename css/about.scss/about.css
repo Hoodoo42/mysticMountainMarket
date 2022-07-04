@@ -110,7 +110,7 @@ a {
   display: none;
 }
 
-label {
+.ham {
   display: grid;
   place-items: center;
 }
@@ -126,8 +126,6 @@ label > img {
 footer {
   display: grid;
   text-align: center;
-  row-gap: 10px;
-  padding: 15px;
 }
 footer #footer-div {
   display: grid;
@@ -185,6 +183,7 @@ footer #footer-div a {
 #about-main {
   display: grid;
   grid-template-rows: 1fr;
+  margin-bottom: 35px;
 }
 
 h1 {
@@ -248,4 +247,11 @@ h1 {
   font-family: monospace;
   -webkit-animation: textFade 5s steps(60, end);
           animation: textFade 5s steps(60, end);
+}
+
+#scroll {
+  display: grid;
+  position: absolute;
+  z-index: -1;
+  transform: translateX(-50px) translateY(205px) scaleY(2);
 }/*# sourceMappingURL=about.css.map */

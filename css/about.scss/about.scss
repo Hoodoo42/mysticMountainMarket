@@ -8,16 +8,17 @@
 #about-body {
   display: grid;
   grid-template-rows: 140px 1fr;
- /* background-image: url(/images/background2.jpg);*/
+  /* background-image: url(/images/background2.jpg);*/
   background-size: 910px;
   background-repeat: no-repeat;
   min-height: 100vh;
   width: 100%;
 }
 
-#about-main{
+#about-main {
   display: grid;
   grid-template-rows: 1fr;
+  margin-bottom: 35px;
 }
 
 h1 {
@@ -29,9 +30,7 @@ h1 {
   display: grid;
   grid-template-rows: 100px;
   margin-top: 40px;
-
 }
-
 
 #about_nav {
   display: grid;
@@ -47,9 +46,6 @@ h1 {
   text-align: center;
 
   margin: 45px;
-
-
-
 }
 // About Nav Toggle Function
 .nav_radio_button {
@@ -73,18 +69,21 @@ h1 {
 @keyframes textFade {
   0% {
     opacity: 0;
-
   }
   100% {
     opacity: 100%;
-    
   }
 }
 
 #about_section p {
-
   font-family: monospace;
   animation: textFade 5s steps(60, end);
 }
 
-
+// SCROLL IMAGE --------
+#scroll{
+display: grid;
+position: absolute;
+z-index: -1;
+transform: translateX(-50px) translateY(205px) scaleY(2);
+}
