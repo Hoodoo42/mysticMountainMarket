@@ -30,9 +30,12 @@
         place-items: center;
         text-align: center;
 }
+#desktop_main{
+  display: none;
+}
 }
 
-@media only screen and (min-width: 900px){
+@media only screen and (min-width: 1000px){
 
   #tablet_main, #tablet-menu{
     display: none;

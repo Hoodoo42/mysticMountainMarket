@@ -191,8 +191,12 @@ footer #footer-div #noclick_tel {
     place-items: center;
     text-align: center;
   }
+
+  #desktop_main {
+    display: none;
+  }
 }
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 1000px) {
   #tablet_main, #tablet-menu {
     display: none;
   }
@@ -245,12 +249,16 @@ h1 {
   display: none;
 }
 
-#products:checked ~ #about_section > #our_products {
+#products:checked ~ #about_section #our_products {
   display: block;
 }
 
-#products:checked ~ #about_section > #our_story {
+#products:checked ~ #about_section #our_story {
   display: none;
+}
+
+#products:checked ~ #about_section > div > img {
+  transform: translateX(-50px) translateY(-41px) scaleY(1);
 }
 
 @-webkit-keyframes textFade {
@@ -283,7 +291,16 @@ h1 {
   transform: translateX(-50px) translateY(205px) scaleY(2);
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 600px) {
+  #our_products {
+    width: 70%;
+    padding-left: 15%;
+  }
+
+  #products:checked ~ #about_section > div > img {
+    transform: translateX(-50px) translateY(-387px) scaleY(0.4);
+  }
+
   #scroll {
     display: grid;
     position: absolute;

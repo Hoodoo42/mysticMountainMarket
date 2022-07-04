@@ -56,14 +56,18 @@ h1 {
   display: none;
 }
 
-#products:checked ~ #about_section > #our_products {
+#products:checked ~ #about_section #our_products {
   display: block;
 }
 
-#products:checked ~ #about_section > #our_story {
+#products:checked ~ #about_section #our_story {
   display: none;
 }
 
+#products:checked ~#about_section > div > img{
+
+  transform: translateX(-50px) translateY(-41px) scaleY(1);
+}
 // ANIMATING THE TEXT ----------------------------
 
 @keyframes textFade {
@@ -90,8 +94,19 @@ transform: translateX(-50px) translateY(205px) scaleY(2);
 
 // MEDIA QUERIES -------------
 
-@media only screen and (min-width: 900px){
-  #scroll{
+@media only screen and (min-width:600px){
+// TABLET
+
+ #our_products{
+  width: 70%;
+  padding-left: 15%;
+ } 
+
+#products:checked ~#about_section > div > img{
+transform: translateX(-50px) translateY(-387px) scaleY(.4)
+}
+
+#scroll{
   display: grid;
     position: absolute;
     z-index: -1;
@@ -102,4 +117,10 @@ transform: translateX(-50px) translateY(205px) scaleY(2);
     width: 70%;
     padding-left: 15%;
   }
+}
+
+@media only screen and (min-width: 1000px){
+// DESKTOP
+
+
 }
