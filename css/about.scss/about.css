@@ -167,6 +167,10 @@ footer #footer-div #noclick_tel {
   display: none;
 }
 
+#desktop_main {
+  display: none;
+}
+
 @media only screen and (min-width: 600px) {
   #mobile_main {
     background-image: none;
@@ -186,6 +190,11 @@ footer #footer-div #noclick_tel {
     grid-template-columns: auto auto auto;
     place-items: center;
     text-align: center;
+  }
+}
+@media only screen and (min-width: 900px) {
+  #tablet_main, #tablet-menu {
+    display: none;
   }
 }
 #about-body {

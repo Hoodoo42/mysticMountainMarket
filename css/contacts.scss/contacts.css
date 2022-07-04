@@ -167,6 +167,10 @@ label > img {
   display: none;
 }
 
+#desktop_main {
+  display: none;
+}
+
 @media only screen and (min-width: 600px) {
   #mobile_main {
     background-image: none;
@@ -186,6 +190,11 @@ label > img {
     grid-template-columns: auto auto auto;
     place-items: center;
     text-align: center;
+  }
+}
+@media only screen and (min-width: 900px) {
+  #tablet_main, #tablet-menu {
+    display: none;
   }
 }
 p {

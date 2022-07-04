@@ -2,7 +2,9 @@
 #tablet_main {
   display: none;
 }
-
+#desktop_main{
+  display: none;
+}
 @media only screen and (min-width: 600px) {
 // MOBILE
     #mobile_main {
@@ -28,4 +30,11 @@
         place-items: center;
         text-align: center;
 }
+}
+
+@media only screen and (min-width: 900px){
+
+  #tablet_main, #tablet-menu{
+    display: none;
+  }
 }

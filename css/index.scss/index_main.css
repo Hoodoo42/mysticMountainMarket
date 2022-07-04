@@ -116,6 +116,10 @@ footer #footer-div #noclick_tel {
   display: none;
 }
 
+#desktop_main {
+  display: none;
+}
+
 @media only screen and (min-width: 600px) {
   #mobile_main {
     background-image: none;
@@ -135,6 +139,11 @@ footer #footer-div #noclick_tel {
     grid-template-columns: auto auto auto;
     place-items: center;
     text-align: center;
+  }
+}
+@media only screen and (min-width: 900px) {
+  #tablet_main, #tablet-menu {
+    display: none;
   }
 }
 @-webkit-keyframes shopUp {
@@ -331,4 +340,52 @@ footer #footer-div #noclick_tel {
 }
 #tablet_main > #crystal > #contactUs {
   display: none;
+}
+
+@media only screen and (min-width: 900px) {
+  #desktop_main {
+    display: grid;
+  }
+  #desktop_main > #tarot {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  #desktop_main > #tarot > div {
+    display: grid;
+  }
+  #desktop_main > #tarot > div img {
+    width: 80%;
+  }
+
+  .flip_card {
+    background: transparent;
+    width: 80%;
+  }
+
+  .flip_card_inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  .flip_card:hover .flip_card_inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip_card_front, .flip_card_back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+  }
+
+  .flip_card_back {
+    background-color: slategray;
+    color: white;
+    transform: rotateY(180deg);
+  }
 }/*# sourceMappingURL=index_main.css.map */

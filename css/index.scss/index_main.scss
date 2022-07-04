@@ -189,3 +189,49 @@
     }
   }
 }
+@media only screen and (min-width: 900px){
+
+  #desktop_main{
+    display: grid;
+
+    >#tarot{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    >#tarot >div{
+      display: grid;
+      img{
+        width: 80%;
+      }
+    }
+  }
+.flip_card{
+  background: transparent;
+  width: 80%;
+  
+}
+.flip_card_inner{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d ;
+}
+
+.flip_card:hover .flip_card_inner{
+  transform: rotateY(180deg);
+}
+.flip_card_front, .flip_card_back{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip_card_back{
+  background-color: slategray;
+  color: white;
+  transform: rotateY(180deg);
+}
+}
