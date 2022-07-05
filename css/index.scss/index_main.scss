@@ -138,6 +138,9 @@
   color: black;
 }
 
+ #tablet_main {
+  display: none;
+}
 // MEDIA QUERIES ---------------------
 
 @media only screen and (min-width: 600px) {
@@ -150,23 +153,7 @@
     background-size: contain;
     background-repeat: repeat;
   }
-}
-/*#tablet-menu {
-  > #c-home,
-  #i-shop,
-  #s-home,
-  #a-home {
-    justify-self: end;
-    padding: 15px;
-  }
-  > #i-contact,
-  #s-contact,
-  #a-contact,
-  #c-about {
-    justify-self: start;
-  }
-}
-*/
+
 
 #tablet-menu {
   display: none;
@@ -220,7 +207,7 @@
   display: grid;
   row-gap: 25px;
 }
-
+}
 @media only screen and (min-width: 1000px) {
   #tablet_main,
   #tablet-menu {

@@ -155,8 +155,7 @@ footer #footer-div #noclick_tel {
     font-size: 2.5rem;
   }
 }
-#tablet-menu,
-#tablet_main {
+#tablet-menu {
   display: none;
 }
 

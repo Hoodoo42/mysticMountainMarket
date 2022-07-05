@@ -104,8 +104,7 @@ footer #footer-div #noclick_tel {
     font-size: 2.5rem;
   }
 }
-#tablet-menu,
-#tablet_main {
+#tablet-menu {
   display: none;
 }
 
@@ -294,6 +293,10 @@ footer #footer-div #noclick_tel {
   color: black;
 }
 
+#tablet_main {
+  display: none;
+}
+
 @media only screen and (min-width: 600px) {
   #index-body {
     grid-template-rows: auto 1fr;
@@ -303,77 +306,61 @@ footer #footer-div #noclick_tel {
     background-size: contain;
     background-repeat: repeat;
   }
-}
-/*#tablet-menu {
-  > #c-home,
-  #i-shop,
-  #s-home,
-  #a-home {
-    justify-self: end;
-    padding: 15px;
+
+  #tablet-menu {
+    display: none;
   }
-  > #i-contact,
-  #s-contact,
-  #a-contact,
-  #c-about {
-    justify-self: start;
+
+  #index_nav {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    place-items: center;
+    text-align: center;
+    font-size: 2.5rem;
+  }
+
+  #tablet_main {
+    display: grid;
+    background-image: url(/images/crystalBall.png);
+    background-position: center;
+    background-size: cover;
+  }
+  #tablet_main .nav_radio_button {
+    display: none;
+  }
+
+  #crystal {
+    display: grid;
+    place-items: center;
+    height: 90%;
+    font-size: 3rem;
+    text-align: center;
+  }
+  #crystal > #shopop {
+    display: none;
+  }
+  #crystal > #aboutop {
+    display: none;
+  }
+  #crystal > #contactUs {
+    display: none;
+  }
+
+  #shop_list:checked ~ #crystal > #shopop {
+    display: grid;
+    row-gap: 25px;
+  }
+
+  #about_list:checked ~ #crystal > #aboutop {
+    display: grid;
+    row-gap: 25px;
+  }
+
+  #contact_list:checked ~ #crystal > #contactUs {
+    display: grid;
+    row-gap: 25px;
   }
 }
-*/
-#tablet-menu {
-  display: none;
-}
-
-#index_nav {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  place-items: center;
-  text-align: center;
-  font-size: 2.5rem;
-}
-
-#tablet_main {
-  display: grid;
-  background-image: url(/images/crystalBall.png);
-  background-position: center;
-  background-size: cover;
-}
-#tablet_main .nav_radio_button {
-  display: none;
-}
-
-#crystal {
-  display: grid;
-  place-items: center;
-  height: 90%;
-  font-size: 3rem;
-  text-align: center;
-}
-#crystal > #shopop {
-  display: none;
-}
-#crystal > #aboutop {
-  display: none;
-}
-#crystal > #contactUs {
-  display: none;
-}
-
-#shop_list:checked ~ #crystal > #shopop {
-  display: grid;
-  row-gap: 25px;
-}
-
-#about_list:checked ~ #crystal > #aboutop {
-  display: grid;
-  row-gap: 25px;
-}
-
-#contact_list:checked ~ #crystal > #contactUs {
-  display: grid;
-  row-gap: 25px;
-}
-
 @media only screen and (min-width: 1000px) {
   #tablet_main,
 #tablet-menu {
