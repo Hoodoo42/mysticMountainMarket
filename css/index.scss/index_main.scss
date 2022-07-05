@@ -143,15 +143,16 @@
 @media only screen and (min-width: 600px) {
   // TABLET VIEW ---------------------
   #index-body {
-    grid-template-rows: auto auto 1fr auto;
+    grid-template-rows: auto 1fr;
   }
 
   #index_main {
     background-size: contain;
     background-repeat: repeat;
   }
+
 }
-#tablet-menu {
+/*#tablet-menu {
   > #c-home,
   #i-shop,
   #s-home,
@@ -166,17 +167,36 @@
     justify-self: start;
   }
 }
+*/
+
+#tablet-menu{
+  display:none;
+}
+#index_nav{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  place-items: center;
+  text-align: center;
+
+  font-size: 2.5rem;
+}
 
 #tablet_main {
   display: grid;
   background-image: url(/images/crystalBall.png);
   background-position: center;
   background-size: cover;
+  .nav_radio_button {
+    display: none;
+  }
+}
 
-  > #crystal {
+ #crystal {
     display: grid;
     place-items: center;
     height: 90%;
+    font-size: 3rem;
+    text-align: center;
 
     > #shopop {
       display: none;
@@ -188,7 +208,22 @@
       display: none;
     }
   }
-}
+
+
+  #shop_list:checked ~ #crystal > #shopop {
+    display: grid;
+    row-gap: 25px;
+  }
+  #about_list:checked ~ #crystal > #aboutop{
+    display: grid;
+    row-gap: 25px;
+  }
+  #contact_list:checked ~ #crystal > #contactUs{
+    display: grid;
+    row-gap: 25px;
+  }
+
+
 @media only screen and (min-width: 1000px) {
   #tablet_main,
   #tablet-menu {
@@ -238,9 +273,9 @@
     display: grid;
     place-items: center;
     width: 70%;
-    height: 80%;
+    height: 70%;
     border-radius: 30px;
-    
+
     background-color: rgb(247, 242, 234);
     color: white;
 

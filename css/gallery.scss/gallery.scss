@@ -1,0 +1,30 @@
+@use "../header.scss/mobile-header";
+@use "../footer.scss/footer";
+@use "../nav.scss/mobile_nav";
+
+#gallery{
+    display: grid;
+    grid-template-rows: 1fr;
+    place-items: center;
+
+
+.photos{
+    display: grid;
+    text-align: center;
+    place-items: center;
+
+    >img{
+        width: 100%;
+    }
+}
+
+}
+
+@media only screen and (min-width:600px){
+
+    .photos{
+        >img{
+            width: 70%;
+        }
+    }
+}

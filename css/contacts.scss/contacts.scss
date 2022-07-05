@@ -45,3 +45,18 @@ iframe {
     grid-template-rows: 7vh 5vh 4vh 6vh 7vh 40vh;
   }
 }
+@media only screen and (min-width: 1000px){
+
+  main{
+    grid-template-rows: 7vh 11vh 8vh 16vh 20vh 120vh 80vh;
+  }
+
+  #contact-body{
+    grid-template-rows: 185px 130px 1fr;
+  }
+
+  iframe{
+    width: 60%;
+    height: 80%;
+  }
+}

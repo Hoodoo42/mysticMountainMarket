@@ -303,7 +303,7 @@ footer #footer-div #noclick_tel {
 
 @media only screen and (min-width: 600px) {
   #index-body {
-    grid-template-rows: auto auto 1fr auto;
+    grid-template-rows: auto 1fr;
   }
 
   #index_main {
@@ -311,18 +311,32 @@ footer #footer-div #noclick_tel {
     background-repeat: repeat;
   }
 }
-#tablet-menu > #c-home,
-#tablet-menu #i-shop,
-#tablet-menu #s-home,
-#tablet-menu #a-home {
-  justify-self: end;
-  padding: 15px;
+/*#tablet-menu {
+  > #c-home,
+  #i-shop,
+  #s-home,
+  #a-home {
+    justify-self: end;
+    padding: 15px;
+  }
+  > #i-contact,
+  #s-contact,
+  #a-contact,
+  #c-about {
+    justify-self: start;
+  }
 }
-#tablet-menu > #i-contact,
-#tablet-menu #s-contact,
-#tablet-menu #a-contact,
-#tablet-menu #c-about {
-  justify-self: start;
+*/
+#tablet-menu {
+  display: none;
+}
+
+#index_nav {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  place-items: center;
+  text-align: center;
+  font-size: 2.5rem;
 }
 
 #tablet_main {
@@ -331,19 +345,40 @@ footer #footer-div #noclick_tel {
   background-position: center;
   background-size: cover;
 }
-#tablet_main > #crystal {
+#tablet_main .nav_radio_button {
+  display: none;
+}
+
+#crystal {
   display: grid;
   place-items: center;
   height: 90%;
+  font-size: 3rem;
+  text-align: center;
 }
-#tablet_main > #crystal > #shopop {
+#crystal > #shopop {
   display: none;
 }
-#tablet_main > #crystal > #aboutop {
+#crystal > #aboutop {
   display: none;
 }
-#tablet_main > #crystal > #contactUs {
+#crystal > #contactUs {
   display: none;
+}
+
+#shop_list:checked ~ #crystal > #shopop {
+  display: grid;
+  row-gap: 25px;
+}
+
+#about_list:checked ~ #crystal > #aboutop {
+  display: grid;
+  row-gap: 25px;
+}
+
+#contact_list:checked ~ #crystal > #contactUs {
+  display: grid;
+  row-gap: 25px;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -398,7 +433,7 @@ footer #footer-div #noclick_tel {
     display: grid;
     place-items: center;
     width: 70%;
-    height: 80%;
+    height: 70%;
     border-radius: 30px;
     background-color: rgb(247, 242, 234);
     color: white;
