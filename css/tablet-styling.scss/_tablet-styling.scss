@@ -2,42 +2,39 @@
 #tablet_main {
   display: none;
 }
-#desktop_main{
+#desktop_main {
   display: none;
 }
 @media only screen and (min-width: 600px) {
-// MOBILE
-    #mobile_main {
-        background-image: none;
-        display: none;
-      }
-    
-    
-    #hamburger_menu {
-      display: none;
-    }
+  // MOBILE
+  #mobile_main {
+    background-image: none;
+    display: none;
+  }
 
+  #hamburger_menu {
+    display: none;
+  }
 
-    // TABLET -- for every other page, not index.
-    #tablet_main{
-        display: grid;
-    }
+  // TABLET -- for every other page, not index.
+  #tablet_main {
+    display: grid;
+  }
 
-    #tablet-menu {
-        display: grid;
-        grid-template-columns: auto auto auto;
-      
-        place-items: center;
-        text-align: center;
-}
-#desktop_main{
-  display: none;
-}
+  #tablet-menu {
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+    place-items: center;
+    text-align: center;
+  }
+  #desktop_main {
+    display: none;
+  }
 }
 
-@media only screen and (min-width: 1000px){
-
-  #tablet_main{
+@media only screen and (min-width: 1000px) {
+  #tablet_main {
     display: none;
   }
 }

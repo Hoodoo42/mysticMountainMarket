@@ -78,15 +78,8 @@ footer {
 }
 footer #footer-div {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   margin: 10px;
-}
-footer #footer-div span {
-  padding: 2px;
-  background-color: pink;
-  height: 20px;
-  width: 20px;
-  border-radius: 100px;
 }
 footer #footer-div a {
   font-size: 1.5rem;
@@ -340,5 +333,9 @@ main {
 
   #tablet-menu {
     display: grid;
+  }
+
+  .category {
+    margin: 50px;
   }
 }/*# sourceMappingURL=shop.css.map */

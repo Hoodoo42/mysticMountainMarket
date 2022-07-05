@@ -129,15 +129,8 @@ footer {
 }
 footer #footer-div {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   margin: 10px;
-}
-footer #footer-div span {
-  padding: 2px;
-  background-color: pink;
-  height: 20px;
-  width: 20px;
-  border-radius: 100px;
 }
 footer #footer-div a {
   font-size: 1.5rem;
@@ -311,5 +304,14 @@ h1 {
   #our_story {
     width: 70%;
     padding-left: 15%;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  #scroll {
+    transform: translateX(-50px) translateY(-724px) scaleY(0.3);
+  }
+
+  #products:checked ~ #about_section > div > img {
+    transform: translateX(-50px) translateY(-712px) scaleY(0.3);
   }
 }/*# sourceMappingURL=about.css.map */

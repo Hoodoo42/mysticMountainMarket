@@ -150,7 +150,6 @@
     background-size: contain;
     background-repeat: repeat;
   }
-
 }
 /*#tablet-menu {
   > #c-home,
@@ -169,10 +168,10 @@
 }
 */
 
-#tablet-menu{
-  display:none;
+#tablet-menu {
+  display: none;
 }
-#index_nav{
+#index_nav {
   display: grid;
   grid-template-columns: auto auto auto;
   place-items: center;
@@ -191,38 +190,36 @@
   }
 }
 
- #crystal {
-    display: grid;
-    place-items: center;
-    height: 90%;
-    font-size: 3rem;
-    text-align: center;
+#crystal {
+  display: grid;
+  place-items: center;
+  height: 90%;
+  font-size: 3rem;
+  text-align: center;
 
-    > #shopop {
-      display: none;
-    }
-    > #aboutop {
-      display: none;
-    }
-    > #contactUs {
-      display: none;
-    }
+  > #shopop {
+    display: none;
   }
+  > #aboutop {
+    display: none;
+  }
+  > #contactUs {
+    display: none;
+  }
+}
 
-
-  #shop_list:checked ~ #crystal > #shopop {
-    display: grid;
-    row-gap: 25px;
-  }
-  #about_list:checked ~ #crystal > #aboutop{
-    display: grid;
-    row-gap: 25px;
-  }
-  #contact_list:checked ~ #crystal > #contactUs{
-    display: grid;
-    row-gap: 25px;
-  }
-
+#shop_list:checked ~ #crystal > #shopop {
+  display: grid;
+  row-gap: 25px;
+}
+#about_list:checked ~ #crystal > #aboutop {
+  display: grid;
+  row-gap: 25px;
+}
+#contact_list:checked ~ #crystal > #contactUs {
+  display: grid;
+  row-gap: 25px;
+}
 
 @media only screen and (min-width: 1000px) {
   #tablet_main,

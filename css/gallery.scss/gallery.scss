@@ -2,29 +2,46 @@
 @use "../footer.scss/footer";
 @use "../nav.scss/mobile_nav";
 
-#gallery{
-    display: grid;
-    grid-template-rows: 1fr;
-    place-items: center;
+@use "../tablet-styling.scss/tablet-styling";
 
+#gallery {
+  display: grid;
+  grid-template-rows: 1fr;
+  place-items: center;
 
-.photos{
+  .photos {
     display: grid;
     text-align: center;
     place-items: center;
 
-    >img{
-        width: 100%;
+    > img {
+      width: 100%;
     }
+  }
 }
 
+@media only screen and (min-width: 600px) {
+  #gallery {
+    .photos {
+      > img {
+        width: 80%;
+        height: 90%;
+      }
+    }
+  }
 }
 
-@media only screen and (min-width:600px){
+@media only screen and (min-width: 1000px) {
+  body {
+    grid-template-rows: 260px 50px 1028px 100px;
+  }
 
-    .photos{
-        >img{
-            width: 70%;
-        }
-    }
+  #gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .photos {
+    width: 70%;
+  }
 }
