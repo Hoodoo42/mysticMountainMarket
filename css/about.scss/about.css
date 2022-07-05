@@ -95,7 +95,10 @@ a {
 
 #menu_open:checked ~ #mobile_menu {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+  margin: 0 -10px;
 }
 
 #navburger_close {
@@ -179,7 +182,7 @@ footer #footer-div #noclick_tel {
 
   #tablet-menu {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto auto;
     place-items: center;
     text-align: center;
   }

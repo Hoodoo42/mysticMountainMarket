@@ -128,7 +128,7 @@ footer #footer-div #noclick_tel {
 
   #tablet-menu {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto auto;
     place-items: center;
     text-align: center;
   }
