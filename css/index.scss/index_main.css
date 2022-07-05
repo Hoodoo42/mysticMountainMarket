@@ -144,7 +144,7 @@ footer #footer-div #noclick_tel {
 }
 @-webkit-keyframes shopUp {
   from {
-    bottom: -135px;
+    bottom: -160px;
     opacity: 0;
   }
   to {
@@ -154,7 +154,7 @@ footer #footer-div #noclick_tel {
 }
 @keyframes shopUp {
   from {
-    bottom: -135px;
+    bottom: -160px;
     opacity: 0;
   }
   to {
@@ -164,7 +164,7 @@ footer #footer-div #noclick_tel {
 }
 @-webkit-keyframes aboutUp {
   from {
-    bottom: -90px;
+    bottom: -125px;
     opacity: 0;
   }
   to {
@@ -174,7 +174,7 @@ footer #footer-div #noclick_tel {
 }
 @keyframes aboutUp {
   from {
-    bottom: -90px;
+    bottom: -125px;
     opacity: 0;
   }
   to {
@@ -184,7 +184,7 @@ footer #footer-div #noclick_tel {
 }
 @-webkit-keyframes contactUp {
   from {
-    bottom: -40px;
+    bottom: -88px;
     opacity: 0;
   }
   to {
@@ -194,7 +194,27 @@ footer #footer-div #noclick_tel {
 }
 @keyframes contactUp {
   from {
-    bottom: -40px;
+    bottom: -88px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0px;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes galleryUp {
+  from {
+    bottom: -53px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0px;
+    opacity: 1;
+  }
+}
+@keyframes galleryUp {
+  from {
+    bottom: -53px;
     opacity: 0;
   }
   to {
@@ -213,6 +233,11 @@ footer #footer-div #noclick_tel {
           animation: aboutUp 3s ease-out;
 }
 #menu_open:checked ~ #close #mobile_menu > #contact {
+  position: relative;
+  -webkit-animation: contactUp 3s ease-out;
+          animation: contactUp 3s ease-out;
+}
+#menu_open:checked ~ #close #mobile_menu > #gallery {
   position: relative;
   -webkit-animation: contactUp 3s ease-out;
           animation: contactUp 3s ease-out;

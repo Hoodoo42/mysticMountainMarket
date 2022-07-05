@@ -7,7 +7,7 @@
 // TRANSITIONS------
 @keyframes shopUp {
   from {
-    bottom: -135px;
+    bottom: -160px;
     opacity: 0;
   }
   to {
@@ -18,7 +18,7 @@
 
 @keyframes aboutUp {
   from {
-    bottom: -90px;
+    bottom: -125px;
     opacity: 0;
   }
   to {
@@ -28,7 +28,17 @@
 }
 @keyframes contactUp {
   from {
-    bottom: -40px;
+    bottom: -88px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0px;
+    opacity: 1;
+  }
+}
+@keyframes galleryUp {
+  from {
+    bottom: -53px;
     opacity: 0;
   }
   to {
@@ -49,6 +59,11 @@
   }
 
   > #contact {
+    position: relative;
+    animation: contactUp 3s ease-out;
+  }
+
+  > #gallery {
     position: relative;
     animation: contactUp 3s ease-out;
   }
